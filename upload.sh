@@ -26,4 +26,6 @@ curl -sk -X POST \
   "${BD_URL}/api/scan/data" \
   -H "Authorization: Bearer ${BEARER}" \
   -F "file=@${SBOM_FILE};type=application/spdx" \
-  -F "pr
+  -F "projectName=${PROJECT_NAME}" \
+  -F "versionName=${VERSION_NAME}" \
+  -v
